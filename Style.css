@@ -5,7 +5,7 @@
 }
 
 body {
-    background: white;
+    background: #ffffff;
 
 }
 
@@ -41,14 +41,15 @@ body {
 }
 
 .navbarParent h1:hover span {
-    color: #fdfdfd;
-    text-shadow: 0 0 2px #fdfdfd, 0 0 2px #fdfdfd, 0 0 2px #fdfdfd;
+    color: #363535;
+    text-shadow: 0 0 2px #363535, 0 0 2px #363535, 0 0 2px #363535;
 }
 
 
 /* Navigation Bar */
 .navbarParent {
     background: #34495e;
+    background: white;
     display: flex;
     height: 58px;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
@@ -71,18 +72,20 @@ nav {
     width: 590px;
     height: 50px;
     align-items: end;
-    background: #34495e;
+    /* background: #34495e; */
+    background: white;
     border-radius: 8px;
     font-size: 0;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .1);
     margin: 0 auto;
     text-align: center;
 }
 
 nav a {
     font-size: 15px;
+    font-family: 'Nunito', sans-serif;
     /* text-transform: uppercase; */
-    color: white;
+    color: #363535;
     text-decoration: none;
     line-height: 50px;
     position: relative;
@@ -369,11 +372,127 @@ a:nth-child(5):hover~.animation {
 }
 
 
+
+/* Training Section */
+
+.trainingHeader{
+    position: absolute;
+    text-align: center;
+}
+.trainingHeader h4{
+    bottom: 224px;
+    position: absolute;
+    color: white;
+    font-size: 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    right: -40px;
+    text-align: center;
+}
+.trainingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #222;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap: 60px;
+    position: relative;
+}
+
+.trainingContainer .trainingBox {
+    width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainingContainer .trainingBox .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.trainingContainer .trainingBox .content .icon {
+    color: var(--clr);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #2e2e2e,0 0 0 6px var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+
+}
+
+.trainingContainer .trainingBox:hover .content .icon {
+   
+    background:var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e,0 0 0 300px var(--clr);
+
+
+}
+
+.trainingContainer .trainingBox .content .text h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.trainingContainer .trainingBox:hover .content .text {
+    color: #2e2e2e;
+}
+
+.trainingContainer .trainingBox:hover .content p{
+    color: #999;
+    transition: 0.5s ease-in-out;
+}
+
+.trainingContainer .trainingBox:hover .content p{
+    color: #2e2e2e; 
+}
+
+.trainingContainer .trainingBox .content a{
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 6px 19px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+    border-radius:7px ;
+}
+
+.trainingContainer .trainingBox:hover .content a{
+    background: #2e2e2e;
+    /* background: #1abc9c; */
+    color: var(--clr);
+
+}
+
+
+
+
 /* About Us Section */
 
-.aboutUsContainer .contactInfo .info img {
-    /* height: 126px; */
-}
+
 
 .aboutUsContainer .contactInfo .socialMedia img {
     height: 24px;
@@ -426,12 +545,12 @@ section .aboutUsContainer .contactInfo h2 {
     font-weight: 500;
 }
 
-section .aboutUsContainer .contactInfo .info{
+section .aboutUsContainer .contactInfo .info {
     position: relative;
     margin: 20px 0;
 }
 
-section .aboutUsContainer .contactInfo .info li{
+section .aboutUsContainer .contactInfo .info li {
     position: relative;
     list-style: none;
     display: flex;
@@ -440,19 +559,19 @@ section .aboutUsContainer .contactInfo .info li{
     align-items: flex-start;
 }
 
-section .aboutUsContainer .contactInfo .info li span:nth-child(1){
+section .aboutUsContainer .contactInfo .info li span:nth-child(1) {
     width: 30px;
     min-width: 30px;
 
 }
 
-section .aboutUsContainer .contactInfo .info li span:nth-child(1) img{
+section .aboutUsContainer .contactInfo .info li span:nth-child(1) img {
     max-width: 100%;
     filter: invert(1);
     opacity: 0.5;
 }
 
-section .aboutUsContainer .contactInfo .info li span:nth-child(2){
+section .aboutUsContainer .contactInfo .info li span:nth-child(2) {
     color: #fff;
     margin-left: 10px;
     font-weight: 300;
@@ -460,37 +579,37 @@ section .aboutUsContainer .contactInfo .info li span:nth-child(2){
 }
 
 section .aboutUsContainer .contactInfo .info li:hover span:nth-child(1) img,
-section .aboutUsContainer .contactInfo .info li:hover span:nth-child(2){
+section .aboutUsContainer .contactInfo .info li:hover span:nth-child(2) {
     opacity: 1;
 }
 
-section .aboutUsContainer .contactInfo .socialMedia{
+section .aboutUsContainer .contactInfo .socialMedia {
     position: relative;
     display: flex;
     padding: 41px;
     margin: 21px 52px;
 }
 
-section .aboutUsContainer .contactInfo .socialMedia li{
+section .aboutUsContainer .contactInfo .socialMedia li {
     list-style: none;
     margin-right: 15px;
 }
-section .aboutUsContainer .contactInfo .socialMedia li a{
+
+section .aboutUsContainer .contactInfo .socialMedia li a {
     text-decoration: none;
 }
 
-section .aboutUsContainer .contactInfo .socialMedia li a img{
+section .aboutUsContainer .contactInfo .socialMedia li a img {
     filter: invert(1);
     opacity: 0.5;
 }
 
-section .aboutUsContainer .contactInfo .socialMedia li:hover a img
-{
+section .aboutUsContainer .contactInfo .socialMedia li:hover a img {
     opacity: 1;
 }
 
 
-section .aboutUsContainer .contactForm{
+section .aboutUsContainer .contactForm {
     position: absolute;
     padding: 70px 50px;
     background: #fff;
@@ -502,7 +621,7 @@ section .aboutUsContainer .contactForm{
 
 }
 
-section .aboutUsContainer .contactForm h2{
+section .aboutUsContainer .contactForm h2 {
     color: #0f3959;
     font-size: 24px;
     font-weight: 500;
@@ -516,22 +635,22 @@ section .aboutUsContainer .contactForm .formBox {
     padding-top: 30px;
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox{
+section .aboutUsContainer .contactForm .formBox .inputBox {
     position: relative;
     margin: 0 0 35px 0;
 
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox.w50{
+section .aboutUsContainer .contactForm .formBox .inputBox.w50 {
     width: 47%;
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox.w100{
+section .aboutUsContainer .contactForm .formBox .inputBox.w100 {
     width: 100%;
 }
 
 section .aboutUsContainer .contactForm .formBox .inputBox input,
-section .aboutUsContainer .contactForm .formBox .inputBox textarea{
+section .aboutUsContainer .contactForm .formBox .inputBox textarea {
     width: 100% !important;
     padding: 5px 0;
     font-size: 18px;
@@ -544,12 +663,12 @@ section .aboutUsContainer .contactForm .formBox .inputBox textarea{
 
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox textarea{
+section .aboutUsContainer .contactForm .formBox .inputBox textarea {
     min-height: 120px;
 
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox span{
+section .aboutUsContainer .contactForm .formBox .inputBox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -561,38 +680,28 @@ section .aboutUsContainer .contactForm .formBox .inputBox span{
 
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox input:focus ~ span,
-section .aboutUsContainer .contactForm .formBox .inputBox textarea:focus ~ span,
-section .aboutUsContainer .contactForm .formBox .inputBox input:valid ~ span,
-section .aboutUsContainer .contactForm .formBox .inputBox textarea:valid ~ span
-{
+section .aboutUsContainer .contactForm .formBox .inputBox input:focus~span,
+section .aboutUsContainer .contactForm .formBox .inputBox textarea:focus~span,
+section .aboutUsContainer .contactForm .formBox .inputBox input:valid~span,
+section .aboutUsContainer .contactForm .formBox .inputBox textarea:valid~span {
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #ff568c;
+    color: #1abc9c;
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox input[type="submit"]
-{
+section .aboutUsContainer .contactForm .formBox .inputBox input[type="submit"] {
     position: relative;
     cursor: pointer;
     color: #fff;
-    background:#0f3959;
+    background: #0f3959;
     border: none;
     max-width: 150px;
     padding: 12px;
 
 }
 
-section .aboutUsContainer .contactForm .formBox .inputBox input[type="submit"]:hover{
-    background:#ff568c;
+section .aboutUsContainer .contactForm .formBox .inputBox input[type="submit"]:hover {
+    background: #1abc9c;
 }
-
-
-
-
-
-
-
-

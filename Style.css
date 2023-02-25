@@ -6,6 +6,7 @@
 
 body {
     background: #ffffff;
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -13,10 +14,10 @@ body {
 
 .navbarParent h1 {
     color: #1abc9c;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     font-family: monospace;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     cursor: pointer;
 }
 
@@ -25,7 +26,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 14px auto;
+    margin: 18px auto;
 }
 
 .navbarParent h1:hover span:nth-child(1) {
@@ -163,15 +164,100 @@ a:nth-child(5):hover~.animation {
     left: 470px;
 }
 
+
+
+    /* Home Section */
+
+.homeContainer{
+    
+    height: 100vh;
+    width: 100%;
+  
+    
+}
+
+.homeContainer .row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin: 25px;
+
+}
+
+.homeContainer .row .col{
+    flex-basis: 50%;
+}
+
+.homeContainer .row .col h2{
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.homeContainer .row .col p{
+    line-height: 26px;
+    font-size: 16px;
+    color: #121313;
+}
+
+.homeContainer .row .col button{
+    width: 180px;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #000;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+}
+
+.homeContainer .row .col button:hover{
+    background: #1abc9c;
+}
+
+.homeContainer .row .col .card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    /* background-image: url(Images/development.jpg ); */
+    background-color: #000;
+}
+.card2{
+    background-color: #2196f3;
+}
+
+.homeContainer .row .col .card p{
+    font-size: 15px;
+    color: #ffffff;
+}
+.homeContainer .row .col .card h5{
+    font-size: 15px;
+    color: #ffffff;
+    color: #1abc9c;
+}
+
+
+
 /* Services Section */
+
+.servicesheading h1{
+    color:rgb(16, 16, 16);
+    font-size:37px;
+    text-align:center;
+    display:inline-block;
+    position:relative;
+    width:100%; /*Add this*/
+}
 
 .servicesContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
 }
 
 .servicesContainer .box {
@@ -189,14 +275,11 @@ a:nth-child(5):hover~.animation {
 
 .servicesContainer .box:before {
     content: '';
-    /* width: 50%;
-    height: 50%; */
     position: absolute;
     top: 0;
     left: 0;
     background: rgb(255, 255, 255, .2);
     z-index: 2;
-    /* pointer-events: none; */
 }
 
 .servicesContainer .box .icon {
@@ -288,19 +371,13 @@ a:nth-child(5):hover~.animation {
     margin: 10px 200px;
     margin-left: 303px;
     padding: 10px 54px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-size: 37px;
 }
-
-/* #headingCertificates:hover{
-    box-shadow: 0 0 0 400px #e91e63;
-    background: #e91e63;
-} */
-
 
 .certificatesContainer .certificatesBox .certificatesImgbx img {
     width: 350px;
     height: 233px;
-    /* position: absolute; */
     top: 0;
     left: 0;
     object-fit: cover;
@@ -313,7 +390,6 @@ a:nth-child(5):hover~.animation {
     justify-content: space-around;
     width: 1163px;
     transform-style: preserve-3d;
-
     margin-left: 25px;
 }
 
